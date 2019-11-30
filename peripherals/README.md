@@ -5,6 +5,7 @@ These directories contain design files for various AAC peripherals.
 The bases of the peripherals are colour coded according to the controller input that they should be plugged into:
 
 Yellow : Analog (yellow) inputs
+
 Green : I2C (green) inputs
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
