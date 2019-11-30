@@ -1,0 +1,18 @@
+Lightbox Notes
+==============
+
+Tested LEDs with 5V + 220 Ohm resistor:
+
+LED Colour      Current (mA)
+----------      ------------
+Blue(violet)        6
+Pink                6
+White               8
+Yellow             11
+Green              11
+Red                11
+Orange             11
+Blue               11
+
+
+footprint for MCP23008 does not clearly indicate which side of the PCB the IC should be mounted on.

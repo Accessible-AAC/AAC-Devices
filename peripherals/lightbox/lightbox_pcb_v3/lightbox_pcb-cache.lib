@@ -1,0 +1,160 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_LED
+#
+DEF Device_LED D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ LED*
+ LED_SMD:*
+ LED_THT:*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dbh_kicad_library_PJ320A
+#
+DEF dbh_kicad_library_PJ320A J 0 40 Y Y 1 F N
+F0 "J" -550 150 50 H V C CNN
+F1 "dbh_kicad_library_PJ320A" -550 50 50 H V C CNN
+F2 "dbh_kicad_library:PJ-320A" -650 400 50 H I C CNN
+F3 "" -650 400 50 H I C CNN
+DRAW
+T 0 -650 -350 50 0 0 0 TRRS Normal 0 C C
+P 4 0 0 0 -625 -100 -575 -150 -525 -100 -400 -100 N
+P 5 0 0 0 -400 0 -650 0 -650 -100 -700 -150 -750 -100 N
+P 4 0 1 0 -400 -200 -700 -200 -750 -150 -800 -200 N
+P 6 0 1 0 -400 -300 -900 -300 -900 0 -850 0 -850 -250 -900 -250 N
+X Ring2 2 0 -200 100 L 50 50 1 1 P
+X Ring1 3 0 0 100 L 50 50 1 1 P
+X Tip 4 0 -100 100 L 50 50 1 1 P
+X Sleeve 5 0 -300 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dbh_kicad_library_PRTR5V0U2X
+#
+DEF dbh_kicad_library_PRTR5V0U2X ESD 0 40 Y Y 1 F N
+F0 "ESD" 350 -100 50 H V C CNN
+F1 "dbh_kicad_library_PRTR5V0U2X" 350 200 50 H V C CNN
+F2 "Package_TO_SOT_SMD:SOT-143" 370 -180 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 100 150 600 -50 0 1 0 N
+X GND 1 0 0 100 R 50 50 1 1 W
+X I/O_1 2 700 100 100 L 50 50 1 1 I
+X I/O_2 3 700 0 100 L 50 50 1 1 I
+X V 4 0 100 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Interface-I-O-Expanders_MCP23008-E_P
+#
+DEF dk_Interface-I-O-Expanders_MCP23008-E_P U 0 40 Y Y 1 F N
+F0 "U" -300 650 60 H V C CNN
+F1 "dk_Interface-I-O-Expanders_MCP23008-E_P" -100 -200 60 V V C CNN
+F2 "digikey-footprints:DIP-18_W7.62mm" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en021920" 200 300 60 H I L CNN
+F4 "MCP23008-E/P-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MCP23008-E/P" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "Interface - I/O Expanders" 200 700 60 H I L CNN "Family"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en021920" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/MCP23008-E-P/MCP23008-E-P-ND/735951" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC I/O EXPANDER I2C 8B 18DIP" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -400 600 200 -900 0 1 0 f
+X SCL 1 -500 -400 100 R 50 50 1 1 I
+X GP0 10 -500 500 100 R 50 50 1 1 B
+X GP1 11 -500 400 100 R 50 50 1 1 B
+X GP2 12 -500 300 100 R 50 50 1 1 B
+X GP3 13 -500 200 100 R 50 50 1 1 B
+X GP4 14 -500 100 100 R 50 50 1 1 B
+X GP5 15 -500 0 100 R 50 50 1 1 B
+X GP6 16 -500 -100 100 R 50 50 1 1 B
+X GP7 17 -500 -200 100 R 50 50 1 1 B
+X VDD 18 -100 700 100 D 50 50 1 1 W
+X SDA 2 -500 -300 100 R 50 50 1 1 B
+X A2 3 -500 -500 100 R 50 50 1 1 I
+X A1 4 -500 -600 100 R 50 50 1 1 I
+X A0 5 -500 -700 100 R 50 50 1 1 I
+X ~RESET 6 -500 -800 100 R 50 50 1 1 I
+X NC 7 300 100 100 L 50 50 1 1 N
+X INT 8 300 300 100 L 50 50 1 1 O
+X VSS 9 0 -1000 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,43 @@
+
+== Exporting Gerber Files ==
+Use plotter to export gerber files:
+    Gerber plot format
+    
+    F.Cu
+    B.Cu
+    F.Paste
+    B.Paste
+    F.SilkS
+    B.SilkS
+    F.Mask
+    B.Mask
+    Edge.Cuts
+    
+    Plot footprint values
+    Plot footprint references
+    Exclude PCB edge layer from other layers
+    Exclude pads from silkscreen
+    Check zone fills before plotting
+    Use Protel filename extenstions
+    Coordinate format is 4.6 unit mm.
+    Show all messages (bottom tick boxes)
+    
+    Click on plot button to generate gerber files
+    
+    Click on Generate Drill Files to bring up another menu:
+    
+    Excellon
+    Inches
+    Suppress leading zeros
+    Postscript
+    Minimal header
+    Absolute
+    
+    Click on generate drills File
+    
+    
+=== Verify Gerber Files ===
+
+Gerblook.org  
+
+    - zip gerber files directory (right click --> compress) and upload to gerblook.org to verify

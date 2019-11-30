@@ -1,0 +1,81 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# dbh_kicad_library_PJ320A
+#
+DEF dbh_kicad_library_PJ320A J 0 40 Y Y 1 F N
+F0 "J" -550 150 50 H V C CNN
+F1 "dbh_kicad_library_PJ320A" -550 50 50 H V C CNN
+F2 "dbh_kicad_library:PJ-320A" -650 400 50 H I C CNN
+F3 "" -650 400 50 H I C CNN
+DRAW
+T 0 -650 -350 50 0 0 0 TRRS Normal 0 C C
+P 4 0 0 0 -625 -100 -575 -150 -525 -100 -400 -100 N
+P 5 0 0 0 -400 0 -650 0 -650 -100 -700 -150 -750 -100 N
+P 4 0 1 0 -400 -200 -700 -200 -750 -150 -800 -200 N
+P 6 0 1 0 -400 -300 -900 -300 -900 0 -850 0 -850 -250 -900 -250 N
+X Ring2 2 0 -200 100 L 50 50 1 1 P
+X Ring1 3 0 0 100 L 50 50 1 1 P
+X Tip 4 0 -100 100 L 50 50 1 1 P
+X Sleeve 5 0 -300 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dbh_kicad_library_red_touch_sensor
+#
+DEF dbh_kicad_library_red_touch_sensor S 0 40 Y Y 1 F N
+F0 "S" 550 250 50 H V C CNN
+F1 "dbh_kicad_library_red_touch_sensor" 550 -650 50 H V C CNN
+F2 "dbh_kicad_library:Red_Touch_Module" 850 -550 50 H I C CNN
+F3 "" 0 -150 50 H I C CNN
+DRAW
+C 650 -150 180 0 1 0 N
+S 100 200 950 -500 0 1 0 N
+X Gnd 1 0 0 100 R 50 50 1 1 W
+X I/O 2 0 -150 100 R 50 50 1 1 O
+X Vcc 3 0 -300 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+5V
+#
+DEF power_+5V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library

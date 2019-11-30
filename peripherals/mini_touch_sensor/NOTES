@@ -1,0 +1,30 @@
+Description
+
+Mini capacitive touch sensor module based on the dedicated TTP223
+touch sensor IC.  The module provides a single integrated touch
+sensing area of 11 x 10.5mm with a sensor range of ~5mm.  An on-board
+LED will give a visual indication of when the sensor is triggered.
+
+When triggered the modules output will switch from its idle low
+state to high (default operation).
+
+Solder jumpers allow for reconfiguring its mode of operation to be
+either active low or toggle output.
+
+    Voltage : 2.5v to 5.5v
+
+    Supply current : (Vcc = 5V) : 6uA (Idle) 16mA (Active)
+
+    Max sensor range : ~5mm
+
+    Trigger setting mode : (1->Short; 0->No Short)
+
+    Jumper links
+
+    AB=00 : No-lock High TTL level ouput;
+
+    AB=01 : Self-lock High TTL level ouput;
+
+    AB=10 : No-lock Low TTL level ouput;
+
+    AB=11 : Self-lock Low TTL level ouput;

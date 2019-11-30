@@ -1,0 +1,68 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Jumper_SolderJumper_3_Open
+#
+DEF Jumper_SolderJumper_3_Open JP 0 0 Y N 1 F N
+F0 "JP" -100 -100 50 H V C CNN
+F1 "Jumper_SolderJumper_3_Open" 0 110 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -40 0 40 901 -901 0 1 0 N -40 40 -40 -40
+A -40 0 40 901 -901 0 1 0 F -40 40 -40 -40
+A 40 0 40 -899 899 0 1 0 N 40 -40 40 40
+A 40 0 40 -899 899 0 1 0 F 40 -40 40 40
+S -20 40 20 -40 0 1 0 F
+P 2 0 1 0 -100 0 -80 0 N
+P 2 0 1 0 -40 40 -40 -40 N
+P 2 0 1 0 0 -50 0 -40 N
+P 2 0 1 0 40 40 40 -40 N
+P 2 0 1 0 100 0 80 0 N
+X A 1 -200 0 100 R 50 50 1 1 P
+X C 2 0 -150 100 U 50 50 1 1 I
+X B 3 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# dbh_kicad_library_PJ320A
+#
+DEF dbh_kicad_library_PJ320A J 0 40 Y Y 1 F N
+F0 "J" -550 150 50 H V C CNN
+F1 "dbh_kicad_library_PJ320A" -550 50 50 H V C CNN
+F2 "dbh_kicad_library:PJ-320A" -650 400 50 H I C CNN
+F3 "" -650 400 50 H I C CNN
+DRAW
+T 0 -650 -350 50 0 0 0 TRRS Normal 0 C C
+P 4 0 0 0 -625 -100 -575 -150 -525 -100 -400 -100 N
+P 5 0 0 0 -400 0 -650 0 -650 -100 -700 -150 -750 -100 N
+P 4 0 1 0 -400 -200 -700 -200 -750 -150 -800 -200 N
+P 6 0 1 0 -400 -300 -900 -300 -900 0 -850 0 -850 -250 -900 -250 N
+X Ring2 2 0 -200 100 L 50 50 1 1 P
+X Ring1 3 0 0 100 L 50 50 1 1 P
+X Tip 4 0 -100 100 L 50 50 1 1 P
+X Sleeve 5 0 -300 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

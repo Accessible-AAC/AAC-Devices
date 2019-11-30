@@ -1,0 +1,68 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dbh_kicad_library_Mr_Joystick
+#
+DEF dbh_kicad_library_Mr_Joystick J 0 40 Y Y 1 F N
+F0 "J" 350 200 50 H V C CNN
+F1 "dbh_kicad_library_Mr_Joystick" 350 100 50 H V C CNN
+F2 "dbh_kicad_library:Mr_Joystick" 250 250 50 H I C CNN
+F3 "" 250 250 50 H I C CNN
+DRAW
+P 3 0 1 0 300 -600 400 -600 500 -550 N
+P 3 0 1 0 300 -400 400 -400 500 -350 N
+P 3 0 1 0 300 -200 400 -200 500 -150 N
+P 3 0 1 0 300 0 400 0 500 50 N
+P 4 0 1 0 500 -600 550 -600 550 -700 300 -700 N
+P 4 0 1 0 500 -400 550 -400 550 -500 300 -500 N
+P 4 0 1 0 500 -200 550 -200 550 -300 300 -300 N
+P 4 0 1 0 500 0 550 0 550 -100 300 -100 N
+X U+ 1 0 0 100 R 50 50 1 1 P
+X U- 2 0 -100 100 R 50 50 1 1 P
+X R+ 3 0 -200 100 R 50 50 1 1 P
+X R- 4 0 -300 100 R 50 50 1 1 P
+X D+ 5 0 -400 100 R 50 50 1 1 P
+X D- 6 0 -500 100 R 50 50 1 1 P
+X L+ 7 0 -600 100 R 50 50 1 1 P
+X L- 8 0 -700 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dbh_kicad_library_PJ320A
+#
+DEF dbh_kicad_library_PJ320A J 0 40 Y Y 1 F N
+F0 "J" -550 150 50 H V C CNN
+F1 "dbh_kicad_library_PJ320A" -550 50 50 H V C CNN
+F2 "dbh_kicad_library:PJ-320A" -650 400 50 H I C CNN
+F3 "" -650 400 50 H I C CNN
+DRAW
+T 0 -650 -350 50 0 0 0 TRRS Normal 0 C C
+P 4 0 0 0 -625 -100 -575 -150 -525 -100 -400 -100 N
+P 5 0 0 0 -400 0 -650 0 -650 -100 -700 -150 -750 -100 N
+P 4 0 1 0 -400 -200 -700 -200 -750 -150 -800 -200 N
+P 6 0 1 0 -400 -300 -900 -300 -900 0 -850 0 -850 -250 -900 -250 N
+X Ring2 2 0 -200 100 L 50 50 1 1 P
+X Ring1 3 0 0 100 L 50 50 1 1 P
+X Tip 4 0 -100 100 L 50 50 1 1 P
+X Sleeve 5 0 -300 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
