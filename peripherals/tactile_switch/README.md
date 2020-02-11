@@ -21,6 +21,18 @@ connecting a tactile switch, with a black base, to a controller analog (yellow) 
 
 ![Exploded View](images/round_yellow_base_exploded_view.png)
 
+## Parts
+
+1 x 3.5mm Female Audio Connector 4 Pin DIP Stereo Headphone Jack PJ-320A
+
+1 x 12mm x 12mm Tactile Switch
+
+1 x tactile_switch_pcb_v2
+
+1 x Round 59mm Button Enclosure
+
+The PJ320A audio connector and the 12mm x 12mm tactile switch are available from various sources, including https://www.ebay.com/ and https://www.aliexpress.com/
+
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
 <img alt="Creative Commons License" style="border-width:0" 
