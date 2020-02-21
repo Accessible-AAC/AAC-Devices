@@ -33,36 +33,6 @@ module mechanism() {
     translate([-stick_w/2, -stick_d/2, c_h]) color("yellow")cube([stick_w, stick_d, stick_h]);
 }
 
-module hollow_sphere(r, t) {
-    difference() {
-        sphere(r=r);
-        sphere(r=r-t);
-    }
-}
-
-module handle() {
-    t_dia=20;   //top of handle diameter
-    t_h=4;     //top of handle height
-    p_dia=10.3; //post in handle diameter
-    p_h=5.5;  //post in handle height
-    b_dia=26;   // bottom of handle diameter
-    b_h=8.5;     // bottom of handle height
-
-    translate([0, 0, 16+p_h]) cylinder(r=t_dia/2, h=t_h);
-    translate([0, 0, 16]) cylinder(r=p_dia/2, h=p_h);
-
-    difference() {
-        translate([0, 0, 2]) hollow_sphere(r=16, t=0.7);
-        translate([-25, -25, -20]) cube([50, 50, 30]) ;
-   }
-        //cylinder(r=b_dia/2, h=60);
-
-}
-
-module joystick() {
-    mechanism();
-    color("blue") handle();
-}
 
 module handle(h_r, h_l) {
 
@@ -91,6 +61,5 @@ module handle(h_r, h_l) {
 
 }
 
-rotate([90, 0, 0,])
-handle(h_r=5.0, h_l=50);
+rotate([90, 0, 0,]) handle(h_r=5.0, h_l=50);
 
