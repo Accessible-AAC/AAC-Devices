@@ -25,21 +25,13 @@ Wire Wire Line
 	4375 3725 5075 3725
 Wire Wire Line
 	5075 3525 5525 3525
-NoConn ~ 4375 2975
-NoConn ~ 4375 3625
-NoConn ~ 4375 3925
-NoConn ~ 4375 3275
 NoConn ~ 5525 3625
 Wire Wire Line
-	4375 3175 4675 3175
-Wire Wire Line
-	4675 3175 4675 3425
+	4375 3175 4525 3175
 Wire Wire Line
 	4675 3425 5525 3425
 Wire Wire Line
-	4675 3425 4675 3825
-Wire Wire Line
-	4675 3825 4375 3825
+	4675 3825 4525 3825
 Connection ~ 4675 3425
 $Comp
 L dbh_kicad_library:PJ320A J1
@@ -80,4 +72,30 @@ Text Label 4725 3075 0    50   ~ 0
 SW1
 Text Label 4725 3725 0    50   ~ 0
 SW2
+Wire Wire Line
+	4375 3275 4525 3275
+Wire Wire Line
+	4375 2975 4525 2975
+Wire Wire Line
+	4375 3625 4525 3625
+Wire Wire Line
+	4375 3925 4525 3925
+Wire Wire Line
+	4525 2975 4525 3175
+Connection ~ 4525 3175
+Wire Wire Line
+	4525 3175 4675 3175
+Wire Wire Line
+	4525 3175 4525 3275
+Wire Wire Line
+	4675 3175 4675 3425
+Wire Wire Line
+	4525 3625 4525 3825
+Connection ~ 4525 3825
+Wire Wire Line
+	4525 3825 4375 3825
+Wire Wire Line
+	4525 3825 4525 3925
+Wire Wire Line
+	4675 3425 4675 3825
 $EndSCHEMATC
