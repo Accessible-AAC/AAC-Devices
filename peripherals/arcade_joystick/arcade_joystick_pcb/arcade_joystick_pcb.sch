@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:arcade_joystick_pcb-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -19,9 +18,10 @@ L Device:R R1
 U 1 1 5D143B73
 P 6350 2975
 F 0 "R1" V 6275 2975 50  0000 C CNN
-F 1 "5k" V 6425 2975 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6280 2975 50  0001 C CNN
+F 1 "10k" V 6425 2975 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6280 2975 50  0001 C CNN
 F 3 "~" H 6350 2975 50  0001 C CNN
+F 4 "C17902" H 6350 2975 50  0001 C CNN "LCSC"
 	1    6350 2975
 	0    1    1    0   
 $EndComp
@@ -30,9 +30,10 @@ L Device:R R2
 U 1 1 5D145181
 P 6350 3225
 F 0 "R2" V 6275 3225 50  0000 C CNN
-F 1 "5k" V 6425 3225 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6280 3225 50  0001 C CNN
+F 1 "10k" V 6425 3225 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6280 3225 50  0001 C CNN
 F 3 "~" H 6350 3225 50  0001 C CNN
+F 4 "C17902" H 6350 3225 50  0001 C CNN "LCSC"
 	1    6350 3225
 	0    1    1    0   
 $EndComp
@@ -41,9 +42,10 @@ L Device:R R3
 U 1 1 5D145689
 P 6350 3475
 F 0 "R3" V 6275 3475 50  0000 C CNN
-F 1 "5k" V 6425 3475 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6280 3475 50  0001 C CNN
+F 1 "10k" V 6425 3475 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6280 3475 50  0001 C CNN
 F 3 "~" H 6350 3475 50  0001 C CNN
+F 4 "C17902" H 6350 3475 50  0001 C CNN "LCSC"
 	1    6350 3475
 	0    1    1    0   
 $EndComp
@@ -52,9 +54,10 @@ L Device:R R4
 U 1 1 5D145693
 P 6350 3725
 F 0 "R4" V 6275 3725 50  0000 C CNN
-F 1 "5k" V 6425 3725 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6280 3725 50  0001 C CNN
+F 1 "10k" V 6425 3725 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6280 3725 50  0001 C CNN
 F 3 "~" H 6350 3725 50  0001 C CNN
+F 4 "C17902" H 6350 3725 50  0001 C CNN "LCSC"
 	1    6350 3725
 	0    1    1    0   
 $EndComp
@@ -118,17 +121,17 @@ Gnd
 Text Label 6375 3925 0    50   ~ 0
 Gnd
 Text Label 6550 3100 0    50   ~ 0
-U_D
+LR
 Wire Wire Line
 	6500 3600 6500 3725
 Text Label 6550 3225 0    50   ~ 0
 V+
 Text Label 6550 3300 0    50   ~ 0
-L_R
+UD
 Text Label 6550 3400 0    50   ~ 0
-U_D
+LR
 Text Label 6550 3600 0    50   ~ 0
-L_R
+UD
 Wire Wire Line
 	5650 3300 5900 3300
 Text Label 5900 3300 2    50   ~ 0
@@ -136,7 +139,7 @@ V+
 Wire Wire Line
 	5650 3200 5900 3200
 Text Label 5900 3200 2    50   ~ 0
-U_D
+LR
 Wire Wire Line
 	5650 3500 5900 3500
 Text Label 5900 3500 2    50   ~ 0
@@ -144,7 +147,7 @@ Gnd
 Wire Wire Line
 	5650 3400 5900 3400
 Text Label 5900 3400 2    50   ~ 0
-L_R
+UD
 $Comp
 L dbh_kicad_library:Mr_Joystick J2
 U 1 1 5D15435B

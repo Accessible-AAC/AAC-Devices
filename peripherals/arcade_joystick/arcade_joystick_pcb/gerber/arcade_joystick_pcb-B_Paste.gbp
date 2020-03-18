@@ -1,12 +1,12 @@
-G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.2-f72e74a~84~ubuntu16.04.1*
-G04 #@! TF.CreationDate,2019-07-13T03:40:42-04:00*
-G04 #@! TF.ProjectId,arcade_joystick_pcb,61726361-6465-45f6-9a6f-79737469636b,rev?*
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.5-52549c5~84~ubuntu16.04.1*
+G04 #@! TF.CreationDate,2020-03-17T21:52:37-04:00*
+G04 #@! TF.ProjectId,arcade_joystick_pcb,61726361-6465-45f6-9a6f-79737469636b,1.0*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Paste,Bot*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.2-f72e74a~84~ubuntu16.04.1) date 2019-07-13 03:40:42*
+G04 Created by KiCad (PCBNEW 5.1.5-52549c5~84~ubuntu16.04.1) date 2020-03-17 21:52:37*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*

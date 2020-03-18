@@ -41,3 +41,41 @@ Use plotter to export gerber files:
 Gerblook.org  
 
     - zip gerber files directory (right click --> compress) and upload to gerblook.org to verify
+
+
+=== Creating BOM ===
+
+Under tools menu in Eescheema
+
+Install  Arturo's BOM export script https://gist.github.com/arturo182/a8c4a4b96907cfccf616a1edb59d0389
+
+Change the command from "%O" to "%O.csv" and click on Generate. This will generate the BOM needed for assembly.
+
+
+
+
+=== Generating Pick and Place Files ===
+
+Pcbnew:
+"File" -> "Fabrication output" -> "Footprint position (.pos) file" and export the file with the
+following settings. 
+
+    Format: CSV
+    Units:  mm
+    Files:  Separate files for front and back
+    Footprints Selection: With INSERT attribute set
+
+    Show All Errors Warnings Infos  Actions
+
+In order to be compliant with JLCSMT you have to edit the CPL/POS file with Excel or libreoffice Calc.
+
+The following changes are required:
+
+
+1. "Ref" to "Designator" 
+2. "PosX" to "Mid X"
+3. "PosY" to "Mid Y"
+4. "Rot" to "Rotation" 
+5. "Side" to "Layer"
+
+Before, as exported from KiCAD: 
