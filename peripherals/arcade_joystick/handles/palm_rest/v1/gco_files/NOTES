@@ -1,0 +1,6 @@
+
+To pause printing to insert mounting nuts, insert the following lines into the gco file after line 135:
+; Pause to insert nuts                                                                                                                         
+M300 S300 P1000                                                                                                                                
+M25                                                                                                                                            
+; Resume  
