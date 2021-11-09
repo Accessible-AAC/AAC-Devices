@@ -2,7 +2,7 @@
 
 Augmentative and alternative communications device design files based on inexpensive and open source technologies.
 
-Printed circuit boards were designed using KiCAD (https://www.kicad-pcb.org/)
+Printed circuit boards were designed using KiCAD (https://www.kicad.org/)
 
 Enclosures were designed using OpenSCAD version 2015.03-2 (https://www.openscad.org/).
 
