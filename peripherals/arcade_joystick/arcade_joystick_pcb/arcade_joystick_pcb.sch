@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Arcade Joystick Interface Board"
 Date "2019-06-26"
-Rev "1.0"
+Rev "1.1"
 Comp ""
 Comment1 "Copyright 2019 Don Haig (accessible.aac at gmail dot com)"
 Comment2 "http://creativecommons.org/licenses/by-sa/4.0/"

@@ -1,0 +1,153 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 9 12
+Title "ATmega32U4 AAC Hub"
+Date "2020-11-13"
+Rev "1.3"
+Comp "https://github.com/Accessible-AAC"
+Comment1 "(c) Copyright 2020, Don Haig"
+Comment2 "Licensed under CERN-OHL-S V 2"
+Comment3 ""
+Comment4 "Based on https://github.com/AbilitySpectrum/Sensact"
+$EndDescr
+$Comp
+L Connector:USB_B J1201
+U 1 1 5E161247
+P 5000 3525
+F 0 "J1201" H 5057 3992 50  0000 C CNN
+F 1 "USB_B" H 5057 3901 50  0000 C CNN
+F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 5150 3475 50  0001 C CNN
+F 3 " ~" H 5150 3475 50  0001 C CNN
+	1    5000 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1201
+U 1 1 5E162151
+P 5625 3325
+F 0 "F1201" V 5420 3325 50  0000 C CNN
+F 1 "TLC-FSMD050" V 5511 3325 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric" H 5675 3125 50  0001 L CNN
+F 3 "" H 5625 3325 50  0001 C CNN
+F 4 "C261937" V 5625 3325 50  0001 C CNN "LCSC"
+	1    5625 3325
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3325 5525 3325
+Text HLabel 5975 3525 2    50   Input ~ 0
+D+
+Text HLabel 5975 3625 2    50   Input ~ 0
+D-
+Text Label 5400 3525 2    50   ~ 0
+A
+Text Label 5400 3625 2    50   ~ 0
+B
+$Comp
+L Device:R R1202
+U 1 1 5E164880
+P 5550 3625
+F 0 "R1202" V 5650 3625 50  0000 C CNN
+F 1 "22" V 5550 3625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5480 3625 50  0001 C CNN
+F 3 "~" H 5550 3625 50  0001 C CNN
+F 4 "C23345" V 5550 3625 50  0001 C CNN "LCSC"
+	1    5550 3625
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1201
+U 1 1 5E1654FC
+P 5550 3525
+F 0 "R1201" V 5450 3525 50  0000 C CNN
+F 1 "22" V 5550 3525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5480 3525 50  0001 C CNN
+F 3 "~" H 5550 3525 50  0001 C CNN
+F 4 "C23345" V 5550 3525 50  0001 C CNN "LCSC"
+	1    5550 3525
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3525 5400 3525
+Wire Wire Line
+	5300 3625 5400 3625
+Wire Wire Line
+	5700 3525 5975 3525
+Wire Wire Line
+	5700 3625 5975 3625
+Wire Wire Line
+	5725 3325 6075 3325
+Text HLabel 6175 3325 2    50   Input ~ 0
+VBUS
+Wire Wire Line
+	5000 3925 5000 3975
+Wire Wire Line
+	5000 3975 5975 3975
+Wire Wire Line
+	4900 3925 4900 4075
+Wire Wire Line
+	4900 4075 5975 4075
+Text HLabel 5975 3975 2    50   Input ~ 0
+UGND
+Text HLabel 5975 4075 2    50   Input ~ 0
+SHIELD
+$Comp
+L Device:C C1101
+U 1 1 5E1C9BFF
+P 6075 3175
+F 0 "C1101" H 6190 3221 50  0000 L CNN
+F 1 "10uF" H 6190 3130 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6113 3025 50  0001 C CNN
+F 3 "~" H 6075 3175 50  0001 C CNN
+F 4 "C15850" H 6075 3175 50  0001 C CNN "LCSC"
+	1    6075 3175
+	1    0    0    -1  
+$EndComp
+Connection ~ 6075 3325
+Wire Wire Line
+	6075 3325 6175 3325
+$Comp
+L power:GND #PWR0133
+U 1 1 5E1CA770
+P 5875 2825
+F 0 "#PWR0133" H 5875 2575 50  0001 C CNN
+F 1 "GND" H 5880 2652 50  0000 C CNN
+F 2 "" H 5875 2825 50  0001 C CNN
+F 3 "" H 5875 2825 50  0001 C CNN
+	1    5875 2825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 2825 6075 2825
+Wire Wire Line
+	6075 2825 6075 3025
+$Comp
+L dbh_kicad_library:ESDA5V3L ESD1101
+U 1 1 5E1E2AF8
+P 5450 4400
+F 0 "ESD1101" H 5575 4575 50  0000 C CNN
+F 1 "ESDA5V3L" H 5575 4503 25  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5595 4535 25  0001 C CNN
+F 3 "/home/don/kicad/libraries/dbh_kicad_library/datasheets/STMicroelectronics-ESDA5V3L_C87911.pdf" H 5500 4375 50  0001 C CNN
+F 4 " C87911" H 5560 4590 50  0001 C CNN "LCSC"
+	1    5450 4400
+	1    0    0    -1  
+$EndComp
+Text Label 5950 3975 2    50   ~ 0
+UGND
+Text Label 5900 4450 2    50   ~ 0
+UGND
+Wire Wire Line
+	5700 4450 5900 4450
+Text Label 5350 4400 0    50   ~ 0
+A
+Text Label 5350 4500 0    50   ~ 0
+B
+Wire Wire Line
+	5450 4400 5350 4400
+Wire Wire Line
+	5450 4500 5350 4500
+$EndSCHEMATC

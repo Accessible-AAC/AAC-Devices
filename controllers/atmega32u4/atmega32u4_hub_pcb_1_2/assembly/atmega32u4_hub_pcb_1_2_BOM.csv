@@ -1,0 +1,30 @@
+Comment,Designator,Footprint, LCSC,
+12mm_Buzzer,Buzzer701,,,https://www.aliexpress.com/item/4000133619336.html?spm=a2g0s.9042311.0.0.27424c4dESjgPi
+22uF,"C101,C102,C103,C107,C108,C110,C111",805,C45783,https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A226MAQNNNE_C45783.html
+1uF,C104,805,C28323,https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21B105KBFNNNE_C28323.html
+20pF,"C105,C109",603,C1648,https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL10C200JB8NNNC_C1648.html
+100nF,C106,805,C49678,https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_YAGEO-CC0805KRX7R9BB104_C49678.html
+10uF,C1101,805,C15850,https://lcsc.com/product-detail/Multilayer-Ceramic-Capacitors-MLCC-SMD-SMT_Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.html
+1N4007,D1001,"SMA,DO-214AC",C95872,https://lcsc.com/product-detail/Diodes-General-Purpose_MDD-Microdiode-Electronics-M7_C95872.html
+RX,D101,603,C72043,https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.html
+RGB LED,D102,,,https://www.aliexpress.com/item/1656753326.html?spm=a2g0s.9042311.0.0.27424c4dJetW7l
+TX,D103,603,C72044,https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0603-Red-LED_C72044.html
+L,D104,603,C72038,https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_Everlight-Elec-19-213-Y2C-CQ2R2L-3T-CY_C72038.html
+IR LED,D701,,,
+ESDA5V3L,"ESD201,ESD301,ESD401,ESD501,ESD1101,ESD1201,ESD1202",SOT-23-3, C87911,https://lcsc.com/product-detail/TVS_STMicroelectronics-ESDA5V3L_C87911.html
+TLC-FSMD050,F1201,603,C261937,https://lcsc.com/product-detail/PTC-Resettable-Fuses_TLC-Electronic-TLC-FSMD050_C261937.html
+Conn_02x03_Odd_Even,J101,PinHeader_2x03_P2.54mm_Vertical,C225518,https://lcsc.com/product-detail/Pin-Header-Female-Header_CJT-Changjiang-Connectors-A2541WV-2x3P_C225518.html
+USB_B,J1201,,C498173,https://lcsc.com/product-detail/New-Arrivals_SOFNG-USB-B01_C498173.html
+BlueSMiRF,J1203,, C225514,https://lcsc.com/product-detail/Pin-Header-Female-Header_CJT-Changjiang-Connectors-A2541HWR-6P_C225514.html
+PJ320A,"J201,J301,J401,J501,J1001,J1202",,,https://www.aliexpress.com/item/32775943831.html?spm=a2g0s.9042311.0.0.27424c4dvTAhw2
+RELAY,K1001,,C10496,https://lcsc.com/product-detail/Relays_PAN-CHANG-SIP-1A05_C10496.html
+BSS138,"Q701,Q801,Q901",SOT-23-3, C82045,https://lcsc.com/product-detail/MOSFET_ON-Semiconductor-BSS138LT1G_C82045.html
+10k,"R104,R101,R102,R103,R105,R108,R115,R116,R201,R202,R801,R802",603, C25804,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.html
+1k,"R111,R113,R114",603,C21190,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0603WAF1001T5E_C21190.html
+330,"R112,R106,R107",603,C23138,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0603WAF3300T5E_C23138.html
+22,"R1202,R1201",603,C23345,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-0603WAF220JT5E_C23345.html
+47,R701,1206,  C25384,https://lcsc.com/product-detail/Chip-Resistor-Surface-Mount_UNI-ROYAL-Uniroyal-Elec-1206W4J0470T5E_C25384.html
+RESET,SW101,6mm x 6mm, C455095,https://lcsc.com/product-detail/Tactile-Switches_XUNPU-TS-1002-07026_C455095.html
+ATmega32U4-AU,U101,QFP-44_10.0x10.0x0.8P,C44854,https://lcsc.com/product-detail/ATMEL-AVR_ATMEL_ATMEGA32U4-AU_ATMEGA32U4-AU_C44854.html
+TSOP38238,U1301,,,
+16 MHz,Y101,SMD-3225_4P, C13738,https://lcsc.com/product-detail/SMD-Crystal-Resonators_Yangxing-Tech-X322516MLB4SI_C13738.html

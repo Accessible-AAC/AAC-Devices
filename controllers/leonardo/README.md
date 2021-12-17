@@ -6,7 +6,8 @@ CAD files and firmware for a controller based on an Arduino leonardo board (http
 
 ## Leonardo Firmware
 
-The most recent firmware for the controller can be found here: https://github.com/AbilitySpectrum/netCle
+The most recent firmware for the controller can be found here: https://github.com/AbilitySpectrum/netCle/tree/master/Arduino/HubV1
+(Please note that the firmware has been deprecated and is no longer actively supported.)
 
 ## Daughter Board Design Files
 

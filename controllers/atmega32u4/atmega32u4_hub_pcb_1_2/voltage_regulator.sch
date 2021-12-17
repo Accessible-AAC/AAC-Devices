@@ -1,0 +1,139 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 6 12
+Title "ATmega32U4 AAC Hub"
+Date "2020-01-08"
+Rev "1.0"
+Comp "Based on https://github.com/AbilitySpectrum/Sensact"
+Comment1 "Drawn by: Don Haig"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GNDPWR #PWR?
+U 1 1 5DEF8C82
+P 5500 3900
+AR Path="/5C766FAD/5DEF8C82" Ref="#PWR?"  Part="1" 
+AR Path="/5C770F30/5DEF8C82" Ref="#PWR?"  Part="1" 
+AR Path="/5C785722/5DEF8C82" Ref="#PWR?"  Part="1" 
+AR Path="/5DEF507A/5DEF8C82" Ref="#PWR?"  Part="1" 
+AR Path="/5DF07E1D/5DEF8C82" Ref="#PWR0601"  Part="1" 
+F 0 "#PWR0601" H 5500 3700 50  0001 C CNN
+F 1 "GNDPWR" H 5504 3746 50  0000 C CNN
+F 2 "" H 5500 3850 50  0001 C CNN
+F 3 "" H 5500 3850 50  0001 C CNN
+	1    5500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3850 5500 3900
+Text Notes 4500 3150 0    50   ~ 0
+3.3V Power Supply
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3900 5900 3900
+$Comp
+L Regulator_Linear:AMS1117-3.3 U?
+U 1 1 5DEF8C9F
+P 5500 3550
+AR Path="/5C766FAD/5DEF8C9F" Ref="U?"  Part="1" 
+AR Path="/5C770F30/5DEF8C9F" Ref="U?"  Part="1" 
+AR Path="/5C785722/5DEF8C9F" Ref="U?"  Part="1" 
+AR Path="/5DEF507A/5DEF8C9F" Ref="U?"  Part="1" 
+AR Path="/5DF07E1D/5DEF8C9F" Ref="U601"  Part="1" 
+F 0 "U601" H 5500 3792 50  0000 C CNN
+F 1 "AMS1117-3.3" H 5500 3701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5500 3750 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 5600 3300 50  0001 C CNN
+F 4 "SOT-223" H 5675 3300 50  0000 C CNN "Package"
+F 5 "C6186" H 5500 3550 50  0001 C CNN "LCSC"
+	1    5500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3850 5900 3900
+Wire Wire Line
+	4950 3850 4950 3900
+Wire Wire Line
+	4950 3900 5500 3900
+Connection ~ 4950 3900
+Text Label 5650 3900 0    50   ~ 0
+GND
+Connection ~ 4950 3550
+Wire Wire Line
+	4950 3550 5200 3550
+Text GLabel 4250 3550 0    50   Input ~ 0
+VBUS
+$Comp
+L power:+3.3V #PWR0602
+U 1 1 5DEFBE83
+P 6525 3550
+F 0 "#PWR0602" H 6525 3400 50  0001 C CNN
+F 1 "+3.3V" H 6540 3723 50  0000 C CNN
+F 2 "" H 6525 3550 50  0001 C CNN
+F 3 "" H 6525 3550 50  0001 C CNN
+	1    6525 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0601
+U 1 1 5DF55212
+P 4950 3550
+F 0 "#FLG0601" H 4950 3625 50  0001 C CNN
+F 1 "PWR_FLAG" H 4950 3723 50  0000 C CNN
+F 2 "" H 4950 3550 50  0001 C CNN
+F 3 "~" H 4950 3550 50  0001 C CNN
+	1    4950 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0603
+U 1 1 5DF5C067
+P 4950 3900
+F 0 "#PWR0603" H 4950 3650 50  0001 C CNN
+F 1 "GND" H 4955 3727 50  0000 C CNN
+F 2 "" H 4950 3900 50  0001 C CNN
+F 3 "" H 4950 3900 50  0001 C CNN
+	1    4950 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3550 4950 3550
+$Comp
+L Device:CP C601
+U 1 1 5E14E81F
+P 4950 3700
+F 0 "C601" H 5068 3746 50  0000 L CNN
+F 1 "10uF" H 5068 3655 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 4988 3550 50  0001 C CNN
+F 3 "~" H 4950 3700 50  0001 C CNN
+F 4 "C7171" H 4950 3700 50  0001 C CNN "LCSC"
+F 5 "AVX" H 4950 3700 50  0001 C CNN "Manufacturer"
+F 6 "TAJA106K016RNJ" H 4950 3700 50  0001 C CNN "Part #"
+	1    4950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3550 5900 3550
+$Comp
+L Device:CP C602
+U 1 1 5E14EDAD
+P 5900 3700
+F 0 "C602" H 6018 3746 50  0000 L CNN
+F 1 "10uF" H 6018 3655 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 5938 3550 50  0001 C CNN
+F 3 "~" H 5900 3700 50  0001 C CNN
+F 4 "C7171" H 5900 3700 50  0001 C CNN "LCSC"
+F 5 "AVX" H 5900 3700 50  0001 C CNN "Manufacturer"
+F 6 "TAJA106K016RNJ" H 5900 3700 50  0001 C CNN "Part #"
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5900 3550
+Wire Wire Line
+	5900 3550 6525 3550
+$EndSCHEMATC
